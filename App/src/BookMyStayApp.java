@@ -1,5 +1,6 @@
 /**
  * =========================================================
+ UC-2
  * MAIN CLASS - BookMyStayApp
  * =========================================================
  *
@@ -36,5 +37,4 @@ public class BookMyStayApp {
         System.out.println("Available: " + suiteAvailable);
 
         System.out.println("\nApplication Finished.");
-    }
-}
+ 
