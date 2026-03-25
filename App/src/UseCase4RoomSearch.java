@@ -5,20 +5,20 @@ public class UseCase4RoomSearch {
         // Create inventory
         RoomInventory inventory = new RoomInventory();
 
-        // Create room objects
-        Room singleRoom = new Room("Single", 1, 250, 1500.0);
-        Room doubleRoom = new Room("Double", 2, 400, 2500.0);
-        Room suiteRoom = new Room("Suite", 3, 750, 5000.0);
+        // Create room objects (Polymorphism)
+        Room single = new SingleRoom();
+        Room doubleRoom = new DoubleRoom();
+        Room suite = new SuiteRoom();
 
         // Create service
         RoomSearchService service = new RoomSearchService();
 
-        // Perform search
+        // Search available rooms
         service.searchAvailableRooms(
                 inventory,
-                singleRoom,
+                single,
                 doubleRoom,
-                suiteRoom
+                suite
         );
     }
 }

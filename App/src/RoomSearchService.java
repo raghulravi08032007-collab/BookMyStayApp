@@ -15,9 +15,7 @@ public class RoomSearchService {
         // Single Room
         if (availability.get("Single") > 0) {
             System.out.println("Single Room:");
-            System.out.println("Beds: " + singleRoom.getBeds());
-            System.out.println("Size: " + singleRoom.getSize() + " sqft");
-            System.out.println("Price per night: " + singleRoom.getPrice());
+            singleRoom.displayRoomDetails();
             System.out.println("Available: " + availability.get("Single"));
             System.out.println();
         }
@@ -25,9 +23,7 @@ public class RoomSearchService {
         // Double Room
         if (availability.get("Double") > 0) {
             System.out.println("Double Room:");
-            System.out.println("Beds: " + doubleRoom.getBeds());
-            System.out.println("Size: " + doubleRoom.getSize() + " sqft");
-            System.out.println("Price per night: " + doubleRoom.getPrice());
+            doubleRoom.displayRoomDetails();
             System.out.println("Available: " + availability.get("Double"));
             System.out.println();
         }
@@ -35,9 +31,7 @@ public class RoomSearchService {
         // Suite Room
         if (availability.get("Suite") > 0) {
             System.out.println("Suite Room:");
-            System.out.println("Beds: " + suiteRoom.getBeds());
-            System.out.println("Size: " + suiteRoom.getSize() + " sqft");
-            System.out.println("Price per night: " + suiteRoom.getPrice());
+            suiteRoom.displayRoomDetails();
             System.out.println("Available: " + availability.get("Suite"));
         }
     }
