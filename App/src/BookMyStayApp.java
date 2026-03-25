@@ -28,21 +28,21 @@ abstract class Room {
 }
 
 // ================= SINGLE ROOM =================
-class SingleRoom extends Room {
+class SingleRoom {
     public SingleRoom() {
         super(1, 250, 1500.0);
     }
 }
 
 // ================= DOUBLE ROOM =================
-class DoubleRoom extends Room {
+class DoubleRoom {
     public DoubleRoom() {
         super(2, 400, 2500.0);
     }
 }
 
 // ================= SUITE ROOM =================
-class SuiteRoom extends Room {
+class SuiteRoom {
     public SuiteRoom() {
         super(3, 750, 5000.0);
     }
