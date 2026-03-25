@@ -1,27 +1,29 @@
-/**
- * =========================================================
- * ABSTRACT CLASS - Room
- * =========================================================
- *
- * Use Case 2: Basic Room Types & Static Availability
- *
- * @version 2.1
- */
-public abstract class Room {
+public class Room {
+    private String type;
+    private int beds;
+    private int size;
+    private double price;
 
-    protected int numberOfBeds;
-    protected int squareFeet;
-    protected double pricePerNight;
-
-    public Room(int numberOfBeds, int squareFeet, double pricePerNight) {
-        this.numberOfBeds = numberOfBeds;
-        this.squareFeet = squareFeet;
-        this.pricePerNight = pricePerNight;
+    public Room(String type, int beds, int size, double price) {
+        this.type = type;
+        this.beds = beds;
+        this.size = size;
+        this.price = price;
     }
 
-    public void displayRoomDetails() {
-        System.out.println("Beds: " + numberOfBeds);
-        System.out.println("Size: " + squareFeet + " sq.ft");
-        System.out.println("Price: ₹" + pricePerNight + " per night");
+    public String getType() {
+        return type;
+    }
+
+    public int getBeds() {
+        return beds;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public double getPrice() {
+        return price;
     }
 }

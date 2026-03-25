@@ -37,4 +37,5 @@ public class BookMyStayApp {
         System.out.println("Available: " + suiteAvailable);
 
         System.out.println("\nApplication Finished.");
- 
+    }
+}
